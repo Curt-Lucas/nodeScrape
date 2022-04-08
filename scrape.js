@@ -17,7 +17,7 @@ async function scrapeData() {
 
       const pageLink = { uri: "" };
 
-      pageLink.uri = $(el).attributes("href");
+      pageLink.uri = $(el).attr("href");
 
       pageLinks.push(pageLink);
     });
