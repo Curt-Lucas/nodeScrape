@@ -1,17 +1,17 @@
-const axios 	= require("axios");
-const cheerio 	= require("cheerio");
-const fs 		= require("fs");
+const axios = require("axios");
+const cheerio = require("cheerio");
+const fs = require("fs");
 
-const url 		= "https://www.rxlist.com/drug-slideshows-all/article.htm";
+const url = "https://www.rxlist.com/drug-slideshows-all/article.htm";
 
 async function scrapeData() {
 	
   try {
 	  
-    const { data } 		= await axios.get(url);
-    const $ 			= cheerio.load(data);
-    const listItems 	= $("a");
-    const pageLinks 	= [];
+    const { data } = await axios.get(url);
+    const $ = cheerio.load(data);
+    const listItems = $("a");
+    const pageLinks = [];
 
     listItems.each((idx, el) => {
 
