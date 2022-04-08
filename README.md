@@ -11,6 +11,11 @@ URL Scraper made in Nodejs with Axios and Cheerio.
 ## Features
 Creates a JSON file with extracted page links.
 
+## Links
+https://www.npmjs.com/package/cheerio
+
+https://www.npmjs.com/package/axiom
+
 ## Donate
 CashApp: $yahooadmin 
 
