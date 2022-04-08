@@ -5,6 +5,9 @@ URL Scraper made in Nodejs with Axios and Cheerio.
  + npm install axios
  + npm install cheerio
 
+## How to run
+ + node scrape.js
+
 ## Features
 Creates a JSON file with extracted page links.
 
